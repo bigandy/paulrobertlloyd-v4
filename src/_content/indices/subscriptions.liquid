@@ -1,0 +1,12 @@
+---
+title: Subscriptions
+summary: Blogs I subscribe to.
+introduction: Blogs I subscribe to.
+permalink: "subscriptions/index.html"
+---
+{%- assign items = subscriptions | sort_by: 'title' -%}
+{%- include 'items' with items
+  item_modifier: 'inline'
+  items_component: 'subscription'
+-%}
+<a href="/subscriptions.opml" download>All RSS feeds</a>
